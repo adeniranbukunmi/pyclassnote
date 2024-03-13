@@ -115,24 +115,26 @@ comment = "commented that This is a python class. it started last week and still
 #     a = a+str(i[0]).upper()
 # print(a)
 
-#assignment (build weight converter app) note:capitalize wont work because it deals with the first letter and here we are working with int and char
-# weight=(input("enter your weight  in Kg or Lbs for pounds>>> ")).lower()
+#assignment(weight converter app) note:capitalize wont work because it deals with the first letter and here we are working with int and char
 
-# if weight.endswith('kg'):
-#     splitted_weight=weight.split('kg')
+# weight=(input("enter your weight  in Kg or Lbs for pounds>>> ")).upper()
+# if weight.endswith('KG'):
+#     splitted_weight=weight.split('KG')
+#     print(splitted_weight)
 #     converted_to_int=int(splitted_weight[0])
 #     converted_weight= converted_to_int / 0.453
 #     converted_weight=round(converted_weight, 3)
-#     print(f'your weight in kg is {converted_weight}pounds')
+#     print(f'your weight in pounds is {converted_weight}lbs')
 # elif weight.endswith('lbs'):
-#     splits=weight.split('lbs')
-#     convet=int(splits[0])
-#     converted_weight= convet * 0.453
+#     splitted_weight=weight.split('lbs')
+#     converted_to_int=int(splitted_weight[0])
+#     converted_weight= converted_to_int * 0.453
 #     converted_weight=round(converted_weight, 3)
-#     print(f'your weight in lbs is {converted_weight}kilos')
+#     print(f'your weight in kg is {converted_weight}kilos')
 
 # else:
 #     print('Error: Please provide weight in either kg or lbs.')
+
 
 # Replace() function
 # newval = comment.replace("commented", "stated")
@@ -148,7 +150,7 @@ comment = "commented that This is a python class. it started last week and still
 word_split = comment.split()
 # print(word_split)   
 # print(" ".join(word_split))
-# value = ["rice", "beans",                                                                     "yam", "banana"]
+# value = ["rice", "beans",                                                              "yam", "banana"]
 # print(" is ".join(value)+" >>>> this is the new joining")
 
 # Capitalize() function
